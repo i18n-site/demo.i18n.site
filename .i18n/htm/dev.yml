@@ -1,0 +1,10 @@
+host: 127.0.0.1:7776
+seo: false
+out:
+  - fs
+v: //127.0.0.1:7776/
+#v: //unpkg.com/i18md
+x: 18x
+importmap:
+  i/: //unpkg.com/@i18n.site/
+
