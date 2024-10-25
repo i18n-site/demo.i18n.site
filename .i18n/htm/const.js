@@ -1,0 +1,1 @@
+const _SITE_NAME = "I18N.SITE"

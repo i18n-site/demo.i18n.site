@@ -1,0 +1,16 @@
+host: i18n-demo.github.io
+seo: false
+out:
+  - fs
+
+pkg:
+  i: i18n.site
+  md: i18n.site
+
+cdn:
+  v:
+    - 127.0.0.1:7776
+
+  jsd:
+    - 127.0.0.1:7775
+

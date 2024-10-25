@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "repository": "https://github.com/i18n-site/demo.i18n.site.git",
+  "homepage": "https://github.com/i18n-site/demo.i18n.site",
+  "author": "i18n.site@gmail.com",
+  "license": "Apache-2.0"
+}

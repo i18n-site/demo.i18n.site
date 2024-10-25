@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "F";
+  src: url(//p.3ti.site/ico1.woff2) format("woff2");
+}
+
+#Ft>b>a.site {
+  background: url("//p.3ti.site/i18n.svg") 0 0 / cover;
+  display: block;
+  height: 24px;
+  opacity: 0.8;
+  width: 115px;
+  flex-shrink: 0;
+}
