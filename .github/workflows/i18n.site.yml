@@ -1,0 +1,52 @@
+name: i18n.site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dist
+
+jobs:
+  i18n:
+
+    permissions:
+      repository-projects: write
+      contents: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      # - name: install node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: lts/*
+      #     cache: 'npm'
+      #     cache-dependency-path: "./package.json"
+      #
+      # - name: fix markdown
+      #   shell: bash
+      #   run: |
+      #     set -ex
+      #     npm i
+      #     npm install --os=linux --cpu=x64 sharp
+      #
+      #     git clone --depth 1 https://github.com/${{ github.repository_owner }}/img.git
+      #     ./.mise/bin/coffee mdfix.coffee
+      #     cd img
+      #     if [[ -n $(git status -s) ]]; then
+      #       git config --global user.name "i18n.site"
+      #       git config --global user.email "github.action@i18n.site"
+      #       git add .
+      #       git commit -m '.'
+      #       git push https://x-access-token:${{github.token}}@github.com/${{ github.repository_owner }}/img main
+      #     fi
+
+      - name: https://i18n.site
+        uses: i18n-site/github-action-i18n.site@main
+        with:
+          I18N_SITE_TOKEN: ${{ secrets.I18N_SITE_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

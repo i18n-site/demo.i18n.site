@@ -1,0 +1,125 @@
+@layer {
+  nav>b>b>i-h>a {
+    margin-right: 24px;
+  }
+
+  nav>b>b>i-h>a:hover {
+    filter: invert(42%) sepia(1) saturate(47);
+  }
+
+  @media (max-width:700px) {
+    nav>b>b>i-h {
+      display: none;
+    }
+
+    nav.S>b>b>i-h {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &>a {
+        margin: 12px 0;
+      }
+    }
+  }
+}
+
+a.logo,
+a.freeTrail {
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  font-family: h;
+  font-size: 16px;
+  transition: none;
+}
+
+a.logo {
+  line-height: 23px;
+  padding: 0 5px 0 57px;
+  border: 3px solid #0618EA;
+  color: #0618EA;
+  font-weight: bolder;
+  margin: 0;
+  border-right-width: 0;
+  border-radius: 16px 0 0 16px;
+  position: relative;
+  padding-top: 2px;
+}
+
+a.logo:before {
+  background: url(//fc.3ti.site/i.svg) 0 0 / 30px no-repeat;
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 34px;
+  left: 15px;
+  top: -1px;
+}
+
+a.logo:after {
+  position: absolute;
+  border-color: #fff transparent transparent #fff;
+  content: "";
+  border-width: 13px 8px;
+  top: 0px;
+  right: -16px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-style: solid;
+}
+
+a.freeTrail {
+  background: linear-gradient(45deg, #0618EA, #7B2FEA);
+  border-radius: 0 16px 16px 0;
+  padding: 0 16px 0 26px;
+  color: #fff;
+  font-weight: bolder;
+  box-shadow: 0 0 6px #000 inset;
+  margin: 0 24px 0 0;
+  line-height: 31px;
+  vertical-align: 1px;
+}
+
+a.logo:hover {
+  background-color: #f40;
+  color: #fff;
+  border-color: #f30;
+  background-blend-mode: screen;
+}
+
+a.logo:hover:before {
+  filter: brightness(0) saturate(100%) invert(100%);
+  top: 1px;
+}
+
+a.logo:hover:after {
+  border-color: #f40 transparent transparent #f40;
+  border-width: 16px 8px;
+  top: -3px;
+}
+
+a.freeTrail:hover {
+  background: linear-gradient(-45deg, #f40, #72f);
+  box-shadow: 0 0 4px #0618EA inset;
+  text-shadow: 0 0 1px #f40;
+}
+
+@media (max-width:1150px) {
+  a.freeTrail {
+    display: none;
+  }
+
+  a.logo {
+
+    margin-right: 24px;
+    border-radius: 16px;
+    padding-right: 10px;
+    border-right-width: 3px;
+
+    &:after {
+      display: none;
+    }
+  }
+}

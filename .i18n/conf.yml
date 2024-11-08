@@ -1,0 +1,42 @@
+i18n:
+  fromTo:
+    en: zh zh-TW ru ja
+    # en:
+
+  # for different from-to
+  # path:
+  #   xx_dir:
+  #     fromTo:
+  #       ja: en ru zh
+  #   xxx/xxx.md:
+  #     fromTo:
+  #       zh: en ru ja
+
+
+  # for replace url prefix
+  # replace:
+  #   https://cdn.xxx.com/img/ : ko de uk>ru zh-TW>zh >en
+
+ignore:
+  - _*
+
+upload:
+  ext:
+    - md
+
+nav:
+  - i18n: home
+    url: /
+    use: Toc
+
+  - i18n: doc
+    # Don't add space between `,`
+    menu: NB demo1,demo2
+    use: Doc
+
+  - i18n: blog
+    use: Blog
+
+addon:
+  - i18n.addon/toc
+  # - i18n.addon/mouse
